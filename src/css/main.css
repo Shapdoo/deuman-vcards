@@ -1,0 +1,193 @@
+/* 
+    IMPORTS FONTS:
+    NUNITO: 400, 600, 700 
+    MONTSERRAT: 700
+*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito:wght@400;600;700&display=swap");
+
+:root {
+  --corp-blue: #10436b;
+  --green: #4ac959;
+  --white: #ffffff;
+  --b-blue: #0077b7;
+  --blue-contact: #1F669D;
+}
+
+/* START - HEADER */
+.header {
+  background: url(../../assets/images/header-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 100px;
+}
+
+/* ABOUT - CONTENT */
+
+.about {
+  font-family: "Nunito", sans-serif;
+  background-color: var(--corp-blue);
+  color: var(--white);
+  height: 550px;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.about .who .picture img {
+  vertical-align: top;
+  border-radius: 50%;
+  border: 5px solid var(--white);
+  margin-top: -60px;
+}
+
+.about .who .picture {
+  text-align: center;
+  /* margin-top: -30px; */
+}
+
+.about .who .info {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+.about .who .info h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+}
+
+.about .who .info .hr {
+    text-align: center;
+}
+
+/* CONTROLS  - CALL, EMAIL, WEB*/
+.main .container .row {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+.main .container .row .control {
+  text-align: center;
+  width: 75px;
+}
+
+.main .container .row .control h3 {
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* INFO - DESCRIPTION */
+.info-description {
+  background-color: var(--white);
+  /* vertical-align: top; */
+  width: 70%;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: -170px;
+}
+
+.info-block {
+    font-family: "Nunito", sans-serif;
+    color: var(--corp-blue);
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.info-block h4 {
+    font-size: .7em;
+    line-height: 21px;
+    font-weight: 400;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+.info-block p {
+    font-size: .9em;
+    margin-top: 0;
+} 
+
+
+/* BUTTONS */
+.buttons-logo {
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.buttons {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.wsp, .linkedin {
+    margin-bottom: 20px;
+   
+}
+
+.wsp a, 
+.linkedin a {
+    padding: 10px 30px;
+    border-radius: 60px;
+    border: 1px solid;
+    font-size: .8em;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.wsp a img,
+.linkedin a img {
+    margin-left: 5px;
+}
+
+.wsp a {
+    border-color: var(--green);
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.linkedin a {
+    border-color: var(--b-blue);
+    color: var(--b-blue);
+}
+
+/* LOGO */
+.logo {
+    text-align: center;
+}
+
+/* FLOAT BUTTON */
+
+.float-button {
+    /* font-family: "Nunito", sans-serif;
+    font-weight: 600; */
+    /* border-radius: 50%;
+    border: 1px solid; */
+    border-radius: 50%;
+    font-size: 1em;
+    border-color: var(--blue-contact);
+    color: var(--blue-contact);
+    position: fixed;
+    bottom: 50px;
+    right: 15px;
+    background-color: var(--white);
+    
+}   
+
+.float-button i {
+    border-radius: 50%;
+    /* box-shadow: 1px 25px 55px -4px rgba(0,0,0,0.75); */
+    box-shadow: 0px 10px 20px -1px rgba(114, 113, 113, 0.75);
+}
